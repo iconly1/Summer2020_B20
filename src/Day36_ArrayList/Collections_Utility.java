@@ -41,5 +41,7 @@ public class Collections_Utility {
 
         int count = Collections.frequency(charlist, 'A');
         System.out.println(count);
+        String s = "h2j5m9";
+        
     }
 }
