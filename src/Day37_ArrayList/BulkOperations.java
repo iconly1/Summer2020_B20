@@ -32,5 +32,12 @@ public class BulkOperations {
         Integer [] arr = {10,20,4};
         boolean r3  = list3.containsAll(Arrays.asList(arr));
         System.out.println(r3);
+        System.out.println("====================================");
+
+        ArrayList<String> group = new ArrayList<>();
+        group.addAll(Arrays.asList("Muhtar","Nadir","Asiya","Saim"));
+        boolean r4 = group.containsAll(Arrays.asList("Marissa","John"));
+        System.out.println(r4);
     }
+
 }
