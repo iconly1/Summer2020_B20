@@ -23,7 +23,8 @@ public class ArrayList_Methods {
 
         ArrayList<String> groceryList = new ArrayList<>();
         groceryList.addAll( Arrays.asList("Eggs", "Milk", "Paper Towels", "Toilet Paper", "Mango", "Orange", "Avocado", "Dragon Fruit")  );
-
+        String g = groceryList.toString();
+        System.out.println(g);
         // pepsi
         boolean r1 = groceryList.contains("Pepsi");
         System.out.println(groceryList);
