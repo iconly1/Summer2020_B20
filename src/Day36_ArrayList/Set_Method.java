@@ -33,7 +33,7 @@ public class Set_Method {
          */
 
         ArrayList<Integer> list2 = new ArrayList<>();
-
+        
         for (int i = 1; i <= 20; i++){
             list2.add(i);
         }
