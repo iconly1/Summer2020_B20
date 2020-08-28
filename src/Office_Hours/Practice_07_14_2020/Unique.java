@@ -1,11 +1,11 @@
 package Office_Hours.Practice_07_14_2020;
 
-import java.util.Scanner;
-
 public class Unique {
+
     public static void main(String[] args) {
+
         String str = "ABABCDDEFFGHHIJJK";
-        String expectedResult = "";  // "C"
+         String expectedResult = "";  // "C"
 
         // str = "ABABC";
 
@@ -30,6 +30,8 @@ public class Unique {
 
 
         System.out.println(expectedResult);
+
+
 
     }
 
