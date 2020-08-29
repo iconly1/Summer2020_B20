@@ -10,11 +10,8 @@ public class Encapsulation {
     }
 
     public void setSsn(long ssn){
-    this.ssn = ssn;
+        this.ssn = ssn;
     }
-
-
-
 
 
 
