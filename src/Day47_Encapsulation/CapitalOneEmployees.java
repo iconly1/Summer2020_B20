@@ -1,4 +1,5 @@
 package Day47_Encapsulation;
+
 /*
 2. create a class called CapitalOneEmployees
                 instance variables:
@@ -15,45 +16,45 @@ package Day47_Encapsulation;
  */
 public class CapitalOneEmployees {
 
-public String employeeName;
-public int employeeAge;
-public String jobTitle;
+    public String employeeName;
+    public int employeeAge;
+    public String jobTitle;
 
-private long ID;
-private double salary;
-private String address;
+    private long ID;
+    private double salary;
+    private String address;
 
-public static String companyName;
+    public static String companyName;
 
-static {
-    companyName = "Capital One";
-}
+    static {
+        companyName = "Capital One";
+    }
 
-public CapitalOneEmployees(String employeeName,int employeeAge, String jobTitle){
-this.employeeName = employeeName;
-this.employeeAge = employeeAge;
-this.jobTitle = jobTitle;
+    public CapitalOneEmployees(String employeeName,int employeeAge, String jobTitle){
+        this.employeeName = employeeName;
+        this.employeeAge = employeeAge;
+        this.jobTitle = jobTitle;
 
-}
+    }
     public void setID(long ID){
-    this.ID = ID;
+        this.ID = ID;
     }
     public void setSalary(double salary){
-    this.salary = salary;
+        this.salary = salary;
     }
     public void setAddress(String address){
-    this.address = address;
+        this.address = address;
     }
     public long getID(){
-    return ID;
+        return ID;
     }
 
     public double getSalary(){
-    return salary;
+        return salary;
     }
 
     public String getAddress (){
-    return address;
+        return address;
     }
 
 

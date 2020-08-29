@@ -44,4 +44,7 @@ public class Credentials {
     public String getPassWord(){
         return passWord;
     }
+
+    public static class MyCapitalOne {
+    }
 }
