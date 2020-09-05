@@ -1,8 +1,7 @@
 package Day34_Wrapperclass;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import Library.Util;
+
 public class List_Practice {
     public static void main(String[] args) {
         ArrayList <Integer>oddList = new ArrayList<>();

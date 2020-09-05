@@ -1,5 +1,5 @@
 package Day0;
-import Library.Util;
+
 public class MethodCall {
 
     public static void main(String[] args) {
