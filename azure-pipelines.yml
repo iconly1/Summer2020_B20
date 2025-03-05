@@ -1,0 +1,24 @@
+trigger:
+- main  # Runs the pipeline on every push to the main branch
+
+pool:
+  vmImage: 'ubuntu-latest'  # Use an Ubuntu virtual machine
+
+steps:
+- task: JavaToolInstaller@0
+  inputs:
+    versionSpec: '17'  # Use Java 17
+    jdkArchitecture: 'x64'
+
+- script: |
+    mvn clean install
+  displayName: 'Build Java Project'
+
+- script: |
+    mvn test
+  displayName: 'Run Unit Tests'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    pathToPublish: 'target'
+    artifactName: 'drop'
