@@ -1,13 +1,13 @@
 trigger:
-- main  # Runs the pipeline on every push to the main branch
+- main  # Runs when pushing to main
 
 pool:
-  vmImage: 'ubuntu-latest'  # Use an Ubuntu virtual machine
+  vmImage: 'ubuntu-latest'
 
 steps:
 - task: JavaToolInstaller@0
   inputs:
-    versionSpec: '17'  # Use Java 17
+    versionSpec: '17'
     jdkArchitecture: 'x64'
 
 - script: |
@@ -22,3 +22,9 @@ steps:
   inputs:
     pathToPublish: 'target'
     artifactName: 'drop'
+
+- task: AzureWebApp@1
+  inputs:
+    azureSubscription: 'AzureAppServiceConnection'
+    appName: '<summer2020-b20-app>'
+    package: '$(Build.ArtifactStagingDirectory)/*.jar'
